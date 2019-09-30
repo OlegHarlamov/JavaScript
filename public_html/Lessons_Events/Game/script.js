@@ -58,7 +58,7 @@ if (this.innerText == '') {
 		nullCount = 9; //Кол-во оставшихся ходов
 		winner = null;
 		var table = document.getElementsByClassName('inner-cell');
-		for(var i = 0; i < table.lenth; i++){
+		for(var i = 0; i < table.length; i++){
 			table[i].innerText = '';
 		}
 		player.innerText = 'Сейчас ходит X';
