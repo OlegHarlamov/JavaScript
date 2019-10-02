@@ -151,7 +151,7 @@ function isSnakeUnit(unit){
 function haveFood(unit){
 	var check = false;
 
-	var unit_classes = unit.getAttribute('class').split('');
+	var unit_classes = unit.getAttribute('class').split(' ');
 
 	//Если еда
 	if (unit_classes.includes('food-unit')){
@@ -173,10 +173,10 @@ function createFood() {
 		// рандом
 		var food_x = Math.floor(Math.random() * FIELD_SIZE_X);
 		var food_y = Math.floor(Math.random() * FIELD_SIZE_Y);
-
+		
 		var food_cell = document.getElementsByClassName('cell-' + food_y + '-' + food_x)[0];
 		var food_cell_classes = food_cell.getAttribute('class').split(' ');
-
+		
 		//Проверка на змейку
 		if(!food_cell_classes.includes('snake-unit')){
 			var classes = '';
