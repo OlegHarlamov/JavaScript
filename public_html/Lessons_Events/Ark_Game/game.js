@@ -56,6 +56,7 @@ let game = {
 				callback();
 			}
 		};
+
 		this.preloadSprites(onResourceLoad);
 		this.preloadAudio(onResourceLoad);
 	},
@@ -105,11 +106,10 @@ let game = {
 			if (block.active && this.ball.collide(block)){
 				this.ball.bumpBlock(block);
 				this.addScore();
-				this.sounds.bump();
+				this.sounds.bump.play();
 			}
 		}
 	},
-
 	collidePlatform(){
 		if(this.ball.collide(this.platform)){
 			this.ball.bumpPlatform(this.platform);
@@ -126,10 +126,10 @@ let game = {
 		}
 	},
 	render(){
-		this.ctx.clearRect(0, 0, this.width, this,height);
+		this.ctx.clearRect(0, 0, this.width, this.height);
 		this.ctx.drawImage(this.sprites.background, 0, 0);
 		this.ctx.drawImage(this.sprites.ball, this.ball.frame * this.ball.width, 0, this.ball.width,
-			this.ball.height, this.ball.x, this.ball.y, this.ball.width, this.platform.y);
+			this.ball.height, this.ball.x, this.ball.y, this.ball.width, this .ball.height);
 		this.ctx.drawImage(this.sprites.platform, this.platform.x, this.platform.y);
 		this.renderBlocks();
 		this.ctx.fillText("Score: " +this.score, 15, 20);		
@@ -205,8 +205,8 @@ collideWorldBounds(){
 	let y = this.y + this.dy;
 
 	let ballLeft = x;
-	let BallRight = ballLeft + this.width;
-	let ballTop = 0;
+	let ballRight = ballLeft + this.width;
+	let ballTop = y;
 	let ballBottom = ballTop + this.height;
 
 	let worldLeft = 0;
@@ -280,7 +280,7 @@ game.platform = {
 		}
 	},
 	getTouchOffset(x){
-		let diff = (this.x + this.dx) -x;
+		let diff = (this.x + this.width) -x;
 		let offset = this.width - diff;
 		let result = 2 * offset / this.width;
 		return result -1;
