@@ -402,9 +402,266 @@
 						<label for="exampleInputPassword1" class="col-3">пароль</label>
 						<input type="password" class="form-control col-9" id="exampleInputPassword1" placeholder="пароль">
 					</div>
+					<div class="form-group">
+						<label for="exampleFormControlSelect1">Examle select</label>
+						<select id="exampleFormControlSelect1" class="form-control">
+							<option>1</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+							<option>5</option>
+						</select>
+					</div>
+					<div class="from-row">
+						
+						<div class="form-check-inline">
+							<input type="checkbox" class="form-check-input" id="exampleCheck1" disabled>
+							<label for="exampleCheck1" class="form-check-label">1</label>
+						</div>
+						<div class="form-check-inline">
+							<input type="checkbox" class="form-check-input" id="exampleCheck1">
+							<label for="exampleCheck1" class="form-check-label">2</label>
+						</div>
+					</div>
+					<button class="btn btn-primary">Submit</button>
 				</form>
 			</div>
 		</div>
 	</div>
+
+
+	<h3>Инпут группы</h3>
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<form>
+					<div class="input-group mb-3">
+						<input type="email" class="form-control" placeholder="Email adress" aria-describedby="basic-addon1">
+						<div class="input-group-append">
+							<button type="button" class="btn btn-primary">Наша кнопка</button>
+							<button type="button" class="btn btn-outline-primary dropdown-toggle" data-toggle="dropdown">Наша кнопка</button>
+							<div class="dropdown-menu">
+								<div class="dropdown-item">menu</div>
+								<div class="dropdown-item">menu</div>
+								<div class="dropdown-item">menu</div>
+								<div class="dropdown-item">menu</div>
+							</div>
+						</div>
+					</div>
+					<div class="input-group mb-3">
+						<input type="password" class="form-control" placeholder="пароль" aria-describedby="basic-addon2">
+						<div class="input-group-append">
+							<span class="input-group-text" id="basic-addon2">@example.com</span>
+						</div>
+					</div>
+					<div class="input-group mb-3">
+						<div class="input-group-prepend">
+							<div class="input-group-text">
+								<input type="checkbox" aria-label="Checkbox for following text input">
+							</div>
+						</div>
+						<input type="text" class="form-control" aria-label="Text input with checkbox">
+					</div>
+					<div class="input-group mb-3">
+						<div class="input-group-prepend">
+							<div class="input-group-text">
+								Что-то там
+							</div>
+						</div>
+						<input type="text" class="form-comtrol">
+						<input type="text" class="form-comtrol">
+					</div>
+					<button type="submit" class="btn btn-primary">Submit</button>
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+	<h3>Навигация, навбары</h3>
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<nav class="navbar navbar-expand-sm fixed-top-navbar-dark bg-dark">
+					<a href="#" class="navbar-brand">Navbar</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" >
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav">
+							<li class="nav-item active">
+								<a href="#" class="nav-link">Home</a>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link">Link</a>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link disabled">Disabled</a>
+							</li>
+						</ul>
+						<form class="form-inline ml-auto">
+							<input type="search" class="form-control" placeholder="Search">
+							<button class="btn btn-outline-success" type="submit">Search</button>
+						</form>
+					</div>
+				</nav>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12">
+				<div class="row">
+					<div class="col-3">
+						<nav class="nav flex-column nav-pills">
+							<a href="#tab1-1" class="nav-item nav-link active" id="nav1-1" aria-controls="tab1-1">Activate</a>
+							<a href="#tab1-2" class="nav-item nav-link" id="nav1-2" aria-controls="tab1-2">Activate</a>
+							<a href="#tab1-3" class="nav-item nav-link" id="nav1-3" aria-controls="tab1-3">Activate</a>
+						</nav>
+					</div>
+					<div class="col-9">
+						<div class="tab-content">
+							<div class="tab-pane fade show active" id="tab1-1" aria-labelledby="nav1-1">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные текста.</div>
+							<div class="tab-pane fade" id="tab1-2" aria-labelledby="nav1-2">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные текста.</div>
+							<div class="tab-pane fade" id="tab1-3" aria-labelledby="nav1-3">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные текста.</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12">
+					<ul class="nav nav-fill nav-pills">
+						<li class="nav-item">
+							<a href="#tab2-1" class="nav-link" id="nav2-1" data-toggle="tab" aria-controls="tab2-1">Active</a>
+						</li>
+						<li class="nav-item">
+							<a href="#tab2-2" class="nav-link" id="nav2-2" data-toggle="tab" aria-controls="tab2-2">Active</a>
+						</li>
+						<li class="nav-item">
+							<a href="#tab2-3" class="nav-link" id="nav2-3" data-toggle="tab" aria-controls="tab2-3">Active</a>
+						</li>
+					</ul>
+					<div class="tab-content">
+						<div class="tab-pane fade show active" id="tab2-1" aria-labelledby="nav2-1">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные текста.</div>
+						<div class="tab-pane fade" id="tab2-2" aria-labelledby="nav2-2">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные текста.</div>
+						<div class="tab-pane fade" id="tab2-3" aria-labelledby="nav2-2">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные текста.</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<h3>Подсказки</h3>
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<button class="btn btn-lg btn-danger" style="margin-left: 300px;" type="button" data-placeholder="bottom" data-toggle="tooltip" title="Name popover" data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>
+
+					<span class="" data-toggle="tooltip" title="Name popover" data-content="Disabled popover">
+						<button class="btn btn-primary" type="button">Disabled button</button>
+					</span>
+				</div>
+			</div>
+		</div>
+
+
+		<h3>Прогресс бар</h3>
+		<div class="container">
+			<div class="row">
+				<div class="col-12">	
+					<div class="progress mb-2" style="height: 30px;">
+						<div class="progress-bar bg-warning progress-bar-striped" style="width: 45%">45%</div>
+					</div>
+					<div class="progress mb-2" style="height: 50px;">
+						<div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" style="width: 10%">10%</div>
+						<div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width: 20%">20%</div>
+						<div class="progress-bar bg-warning progress-bar-striped progress-bar-animated" style="width: 45%">45%</div>
+					</div>
+					<div class="progress mb-2">
+						<div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width: 20%">20%</div>
+					</div>
+					<div class="progress" style="height: 155px">
+						<div class="progress-bar progress-bar-striped" style="width: 85%">85%</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<h3>Скролинг</h3>
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<nav class="navbar navbar-light bg-light" id="navbar-example2">
+						<a href="#" class="navbar-brand">Navbar</a>
+						<ul class="nav nav-pills">
+							<li class="nav-item">
+								<a href="#fat" class="nav-link">@fat</a>
+							</li>
+							<li class="nav-item">
+								<a href="#mdo" class="nav-link">@mdo</a>
+							</li>
+							<li class="nav-item dropdown">
+								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button">Dropped</a>
+								<div class="dropdown-menu">
+									<a href="#one" class="dropdown-item">one</a>
+									<a href="#two" class="dropdown-item">two</a>
+									<div class="dropdown-divider" role="separator"></div>
+									<a href="#three" class="dropdown-item">three</a>
+								</div>
+							</li>
+						</ul>
+					</nav>
+					<div data-spy="scroll" data-target="navbar-example2" style="position: relative; height: 400px; overflow: auto;">
+						<h4 id="fat">@fat</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo voluptatibus beatae, illum, ipsum deserunt sequi eveniet quos, earum eius porro aliquam fugiat dignissimos soluta dolorem quia laborum, sint magnam dolore! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur consequatur voluptas assumenda! Blanditiis labore totam ipsum quos. Eaque obcaecati deserunt, quas laborum sequi error omnis ipsum, est quos laudantium ex!</p>
+						<h4 id="mdo">@mdo</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci atque quidem repellendus ullam, officiis sit fugit, facilis reprehenderit iusto similique expedita repudiandae harum, tempora sunt exercitationem maiores, officia minima alias! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi minus nisi amet, qui, dolores fugit. Tenetur ipsa, fugiat totam amet earum unde accusamus explicabo ad voluptatem, quo omnis non debitis.</p>
+						<h4 id="one">one</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus nam minus impedit consequuntur ducimus nisi veritatis tempore labore nesciunt, asperiores beatae a sit eveniet, facere. Amet accusamus nam laudantium porro! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque praesentium neque, impedit odit cumque, rem perferendis ut esse quam recusandae voluptates possimus minima iusto natus, iste maxime harum hic consectetur.</p>
+						<h4 id="two">two</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus nam minus impedit consequuntur ducimus nisi veritatis tempore labore nesciunt, asperiores beatae a sit eveniet, facere. Amet accusamus nam laudantium porro! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque praesentium neque, impedit odit cumque, rem perferendis ut esse quam recusandae voluptates possimus minima iusto natus, iste maxime harum hic consectetur.</p>
+						<h4 id="three">three</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus nam minus impedit consequuntur ducimus nisi veritatis tempore labore nesciunt, asperiores beatae a sit eveniet, facere. Amet accusamus nam laudantium porro! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque praesentium neque, impedit odit cumque, rem perferendis ut esse quam recusandae voluptates possimus minima iusto natus, iste maxime harum hic consectetur.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<h3>Адаптивное видео</h3>
+		<div class="containe">
+			<div class="row">
+				<div class="col-12">
+					<div class="embed-responsive embed-responsive-16by9">
+						<iframe src="https://www.youtube.com/embed/T-TYyGL9Qjg" class="embed-responsive-item" allowfullscreen></iframe>
+					</div>
+				</div>
+				<div class="col-3">
+					<div class="card">
+						<h5 class="card-title">Имя карточки</h5>
+					</div>
+					<div class="embed-repsonsive embed-repsonsive-16bt9">
+						<iframe src="https://www.youtube.com/embed/T-TYyGL9Qjg" class="embed-responsive-item" allowfullscreen></iframe>
+					</div>
+					<div class="card-body">
+						<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, delectus. Quis incidunt rem earum amet cumque sit maxime perspiciatis ullam, voluptatibus est alias numquam nostrum omnis nisi et! Odio, dignissimos?</p>
+						<a href="#" class="btn btn-primary">Go somewhere</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-3">
+				<div class="card text-center bg-warning text-white">
+					<div class="embed-responsive-item embed-responsive-16by9">
+						<iframe src="https://www.youtube.com/embed/T-TYyGL9Qjg" class="embed-responsive-item" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXp65KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+	 integrity= "sha384-vFXuSJphROIrBnz7yo7o841mkfc8J2QZACq4NCceLEa04IHicKupJf9c9IpFgh" crossorigin="anonyous"></script>
+	 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.e.0-beta.2/js/bootstrap.in.js" integrity= "sha384-alpBpkh1PFOepccYVYDB4do5UnbkysXSKZXn3XxPqe51KTFUKJNkCk95aVuEZf1J" crossorigin="anonymous"></script> 
+	 <script spc="js/main.js"></script>
 </body>
 </html>
